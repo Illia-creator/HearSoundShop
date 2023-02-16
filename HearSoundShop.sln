@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{85784F88-E6CD-4B39-9C1E-259E425A6339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HearSoundShop.Dal", "src\HearSoundShop.Dal\HearSoundShop.Dal.csproj", "{D08B95DD-0448-4462-9D7C-1D17E7DFCCCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D08B95DD-0448-4462-9D7C-1D17E7DFCCCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D08B95DD-0448-4462-9D7C-1D17E7DFCCCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D08B95DD-0448-4462-9D7C-1D17E7DFCCCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D08B95DD-0448-4462-9D7C-1D17E7DFCCCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D08B95DD-0448-4462-9D7C-1D17E7DFCCCF} = {85784F88-E6CD-4B39-9C1E-259E425A6339}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {590CC06B-1EE3-48D9-B2FE-0E81189A54CD}
+	EndGlobalSection
+EndGlobal
