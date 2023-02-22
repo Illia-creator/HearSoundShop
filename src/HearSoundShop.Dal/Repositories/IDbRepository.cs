@@ -7,7 +7,6 @@ namespace HearSoundShop.Dal.Repositories
     public interface IDbRepository
     {
         IQueryable<T> Get<T>(Expression<Func<T, bool>> selector) where T : class, IEntity;
-        IQueryable<T> Get<T>() where T : class, IEntity;
         IQueryable<T> GetAll<T>() where T : class, IEntity;
 
         Task<Guid> Add<T>(T newEntity) where T : class, IEntity;

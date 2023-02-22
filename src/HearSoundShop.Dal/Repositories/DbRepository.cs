@@ -25,17 +25,13 @@ namespace HearSoundShop.Dal.Repositories
 
         public async Task Delete<T>(Guid id) where T : class, IEntity
         {
-            var activeEntity = await context.Set<T>().FirstOrDefaultAsync(x => x.Id == id)
+            var activeEntity = await context.Set<T>().FirstOrDefaultAsync(x => x.Id == id);
+            await Task.Run(() => context.Update(activeEntity)); 
         }
 
         public IQueryable<T> Get<T>(Expression<Func<T, bool>> selector) where T : class, IEntity
         {
-            throw new NotImplementedException();
-        }
-
-        public IQueryable<T> Get<T>() where T : class, IEntity
-        {
-            throw new NotImplementedException();
+            return context.Set<T>().Where(selector).AsQueryable();
         }
 
         public IQueryable<T> GetAll<T>() where T : class, IEntity
